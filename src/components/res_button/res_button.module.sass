@@ -1,0 +1,31 @@
+button 
+	cursor: pointer
+	font-weight: 700
+	transition: all 0.2s
+	padding: 10px 20px
+	border-radius: 100px
+	background: black
+	border: 1px solid #ffffff
+	display: flex
+	align-items: center
+	font-size: 13px
+	color: #cfef00
+	@media (width < 1610px)
+		padding: 1vw 2vw
+		font-size: 0.7vw
+	@media (width < 1000px)
+		margin-top: 1vw
+		padding: 1vw 2vw
+		font-size: 1.3vw
+	@media (width < 600px)
+		margin-top: 1vw
+		padding: 2vw 4vw
+		font-size: 1.8vw
+
+button:hover 
+	color: #ffffff
+	border: 1px dashed #ffffff
+
+button:active 	
+	transform: scale(0.9)
+

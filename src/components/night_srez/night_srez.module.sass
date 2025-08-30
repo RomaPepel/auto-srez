@@ -1,0 +1,42 @@
+.main
+	display: grid
+	grid-template-columns: 1fr 1fr
+	.imput_container
+		display: grid
+		grid-template-rows: 1fr 5fr 1fr
+		justify-items: center
+		.name_container
+			display: grid
+			align-items: center
+			font-size: 200%
+		.body_container
+			width: 60%
+			display: grid
+			grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr
+			.double_input_conteiner
+				display: inline-flex
+				@media (width < 1350px)
+					width: 100%
+			.input_name_container
+				.input_name
+					position: absolute
+					left: 0%
+					top: 0%
+					opacity: 0
+			.input_name_container:hover
+				.input_name
+					opacity: 0.3
+			
+			
+		.button_container
+			display: grid
+			align-items: center
+	.result_container
+		display: grid
+		align-items: center
+		justify-items: center
+		white-space: pre-wrap
+		@media (width < 1350px)
+			display: none
+		.inside_result_container
+			display: grid
